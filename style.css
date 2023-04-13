@@ -1,0 +1,422 @@
+a{
+    text-align: center;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+
+align-items: center;
+
+
+justify-content: center;
+float: left;
+width: 50%;
+padding: 10px;
+height: 500px; /* Should be removed. Only for demonstration */
+}
+.column1{
+
+text-align: center;
+height:300px;
+color: white;
+}
+
+
+.item {
+animation: animate 25s alternate linear infinite;
+}
+.container:hover .item {
+animation-play-state: paused;
+}
+@keyframes animate {
+0% {
+    transform: translate3d(0, 0, 0);
+}
+100% {
+    transform: translate3d(-1100px, 0, 0);
+}
+}
+@media (max-width:767px) {
+.slider-area h2 {
+    font-size: 30px;
+}
+.wrapper {
+    width: 95%;
+    border-radius: 0;
+    padding: 0;
+}
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+.position,.position2,.position3,.column{
+width: 100%;
+}
+}
+
+
+
+
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+background-color: #ecf9ff;
+}
+
+body {
+color: #272727;
+font-family: 'Quicksand', serif;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0;
+padding: 1rem;
+}
+
+.main{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+h1 {
+font-size: 24px;
+font-weight: 400;
+text-align: center;
+}
+
+img {
+height: auto;
+max-width: 100%;
+vertical-align: middle;
+}
+
+.btn {
+color: #ffffff;
+padding: 0.8rem;
+font-size: 14px;
+text-transform: uppercase;
+border-radius: 4px;
+font-weight: 400;
+display: block;
+width: 100%;
+cursor: pointer;
+border: 1px solid rgba(255, 255, 255, 0.2);
+background: transparent;
+}
+
+
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.cards_item {
+display: flex;
+padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+.cards_item {
+width: 50%;
+}
+}
+
+@media (min-width: 56rem) {
+.cards_item {
+width: 33.3333%;
+}
+}
+
+.card {
+background-color: white;
+border-radius: 0.25rem;
+box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.card_content {
+padding: 1rem;
+
+}
+
+.card_title {
+color: #161414;
+font-size: 1.1rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin: 0px;
+text-align: center;
+}
+
+.card_text {
+color: #0c0b0b;
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 400;
+text-align: center;
+}
+.made_by{
+font-weight: 400;
+font-size: 13px;
+margin-top: 35px;
+text-align: center;
+}
+#card_image{
+border-radius: 50px;
+}
+
+.bi bi-yin-yang{
+align-items: center;
+}
+
+.rounded-circle
+{
+align-items: center;
+margin-left: 120px;
+}
+
+.nav-item{
+justify-content: center;
+}
+.position{
+
+position: absolute;
+left:100px;
+
+width:580px;
+height: 450px;
+
+
+}
+.position2{
+
+position: absolute;
+left: 100px;
+
+width:500px;
+height: 500px;
+
+}
+.position3{
+position: absolute;
+right:80px;
+width:700px;
+height: 350px;
+
+
+} 
+.btn2{
+
+border: double 4px transparent;
+border-radius: 50px;
+display:inline-block;
+background-image: linear-gradient(white, white), radial-gradient(circle at top left,#00c8,  #00C853, #B2FF59);
+background-origin: border-box;
+background-clip: content-box, border-box;
+width:120px;
+height: 40px;
+position: absolute;
+left: 250px;
+top: 245px;
+
+}
+
+
+
+
+* {
+box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column4 {
+float: left;
+width: 33.33%;
+padding: 10px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row4:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+
+
+.fullborder{
+border-image:linear-gradient(to left, #00C853, #B2FF59);
+}
+
+.btn1{
+
+border: double 4px transparent;
+border-radius: 50px;
+display:inline-block;
+background-image: linear-gradient(white, white), radial-gradient(circle at top left,#00c8,  #00C853, #B2FF59);
+background-origin: border-box;
+background-clip: content-box, border-box;
+width:120px;
+height: 40px;
+}
+
+
+
+.btn4{
+
+    border: double 4px transparent;
+    border-radius: 50px;
+    display:inline-block;
+    background-image: linear-gradient(#042d50,#042d50), radial-gradient(circle at top left,#00c8,  #00C853, #B2FF59);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width:120px;
+    height: 40px;
+    position: absolute;
+    bottom: -250px;
+    right:600px;
+}
+
+.btn5{
+
+    border: double 4px transparent;
+    border-radius: 50px;
+    display:inline-block;
+    background-image: linear-gradient(#042d50, #042d50), radial-gradient(circle at top left,#00c8,  #00C853, #B2FF59);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width:120px;
+    height: 40px;
+    position: absolute;
+    bottom: -250px;
+    right:800px;
+}
+
+
+.btn6{
+
+    border: double 4px transparent;
+    border-radius: 50px;
+    display:inline-block;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left,#00c8,  #00C853, #B2FF59);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width:120px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right:80px;
+}
+
+
+
+.btn7{
+
+    border: double 4px transparent;
+    border-radius: 50px;
+    display:inline-block;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left,#00c8,  #00C853, #B2FF59);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width:120px;
+    height: 40px;
+    position: absolute;
+    bottom: -85px;
+    left:250px;
+}
+
+
+
+
+
+  
+  /*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+    text-align: center;
+  
+  }
+  #cards_landscape_wrap-2 .container{
+    padding-top: 0px; 
+    padding-bottom: 100px;
+  }
+  #cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+  }
+  #cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+
+    width: 100%;
+    height: 200px;
+  }
+  
+  
+  #cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    padding: 30px 18px;
+  }
+  #cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  }
+ 
+  
+  #cards_landscape_wrap-2 .card-flyer .text-box p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+  }
+
+  
+ 
+
+
+  
+  
